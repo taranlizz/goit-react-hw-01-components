@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+
 import {
   Wrapper,
   WrapperUserInfo,
@@ -12,7 +13,7 @@ import {
 } from './Profile.styled';
 
 export const Profile = ({
-  profileInfo: {
+  user: {
     username,
     tag,
     location,
@@ -48,7 +49,7 @@ export const Profile = ({
 };
 
 Profile.propTypes = {
-  profileInfo: PropTypes.shape({
+  info: PropTypes.shape({
     username: PropTypes.string.isRequired,
     tag: PropTypes.string.isRequired,
     location: PropTypes.string.isRequired,

@@ -5,13 +5,13 @@ import {
   Item,
   Label,
   Percentage,
-  Wrapper,
+  Section,
 } from './Statistics.styled';
 import { getRandomHexColor } from 'utils/getRandomHexColor';
 
 export const Statistics = ({ title, stats }) => {
   return (
-    <Wrapper>
+    <Section>
       {title && <Title>{title}</Title>}
 
       <List>
@@ -22,7 +22,7 @@ export const Statistics = ({ title, stats }) => {
           </Item>
         ))}
       </List>
-    </Wrapper>
+    </Section>
   );
 };
 

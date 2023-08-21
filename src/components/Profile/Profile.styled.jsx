@@ -1,19 +1,18 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.div`
-  width: 250px;
   border-radius: 5px;
   box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.25);
 `;
 
 export const WrapperUserInfo = styled.div`
-  margin-bottom: 10px;
-  padding: 10px;
+  margin-bottom: 30px;
+  padding: 10px 10px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 5px;
+  gap: 10px;
 
   img {
     width: 110px;
@@ -46,7 +45,7 @@ export const StatsList = styled.ul`
 
 export const Item = styled.li`
   width: 100px;
-  height: 80px;
+  height: 90px;
   display: flex;
   gap: 3px;
   flex-direction: column;

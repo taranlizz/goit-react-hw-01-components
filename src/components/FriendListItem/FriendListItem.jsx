@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 export const FriendListItem = ({ friendInfo: { avatar, name, isOnline } }) => {
   return (
-    <ListItem>
+    <ListItem $status={isOnline}>
       <span></span>
       <img src={avatar} alt="User avatar" width="54" height="54" />
       <p>{name}</p>
